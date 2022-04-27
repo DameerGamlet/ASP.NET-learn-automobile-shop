@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddMvc();
 
 var app = builder.Build();
 
@@ -13,8 +14,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// * подключение зависимостей *
 app.UseHttpsRedirection();
+app.UseStatusCodePages();
+
 app.UseStaticFiles();
+
+//app.UseMvcWithDefaultRoute();
 
 app.UseRouting();
 
