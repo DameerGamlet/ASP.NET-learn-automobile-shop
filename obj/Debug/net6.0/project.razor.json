@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/Views/Cars/List.cshtml",
+      "TargetPath": "Views\\Cars\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
