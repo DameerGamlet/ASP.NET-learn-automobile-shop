@@ -57,3 +57,7 @@
 /mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/obj/Debug/net6.0/ACP_learn.csproj.CopyComplete
+/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/dbsettings.json
+/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/Humanizer.dll
+/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/mnt/hard_driver/04_PROJECTS/02_PROGRAMMING/NET/ASP/ACP_learn/bin/Debug/net6.0/Newtonsoft.Json.dll

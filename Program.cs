@@ -1,38 +1,24 @@
 using ACP_learn.Interfaces;
-using ACP_learn.Models;
 using ACP_learn.Mocks;
 
-var builder = WebApplication.CreateBuilder(args);
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddMvc();
-builder.Services.AddTransient<IAllCars, MockCars>();
-builder.Services.AddTransient<ICarsCategory, MockCategory>();
 
-var app = builder.Build();
+namespace ACP_learn;
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+class Program
 {
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
+    public static void Main(string[] args)
+    {
+        CreateWebHostBuilder(args).Build().Run();
+    }
+    public static IWebHostBuilder CreateWebHostBuilder(string[] args) => WebHost.CreateDefaultBuilder(args).UseStartup<Startup>();
 }
-
-// * подключение зависимостей *
-app.UseHttpsRedirection();
-app.UseStatusCodePages();
-
-app.UseStaticFiles();
-
-//app.UseMvcWithDefaultRoute();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();

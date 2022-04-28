@@ -1,0 +1,14 @@
+body{
+    background: rgb(236, 236, 255);
+}
+
+.cover {
+    object-fit: cover;
+    width: 350px;
+    height: 200px;
+  }
+
+  .fh{
+      width: 350px;
+      text-align: left;
+  }
